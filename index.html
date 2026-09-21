@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Айтургандын тушоо тою</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- 💌 ENVELOPE -->
+<section class="envelope-screen" id="envelopeScreen">
+
+    <div class="envelope-wrapper">
+
+        <div class="envelope" id="envelope">
+
+            <div class="envelope-back"></div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-front">
+
+                <div class="wax-seal">
+                    ♡
+                </div>
+
+                <div class="envelope-title">
+                    Чакыруу
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="open-text">
+            Сиздер үчүн атайын чакыруу 🤍
+        </div>
+
+        <button id="openButton">
+            Чакырууны ачуу ♡
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- 🎵 MUSIC BUTTON -->
+<button class="music-button" id="musicButton">
+    🔊
+</button>
+
+
+<!-- 🌸 MAIN CONTENT -->
+<main id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                КЫМБАТТУУ ТУУГАНДАР, ДОСТОР
+            </p>
+
+            <h1>
+                Айтурган
+            </h1>
+
+            <div class="ornament">♡</div>
+
+            <h2>
+                тушоо тоюна
+            </h2>
+
+            <p class="hero-date">
+                26.09.2026
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INVITATION -->
+    <section class="invitation section">
+
+        <div class="container">
+
+            <p class="section-small">
+                АРДАктуу КОНАКТАРЫБЫЗ
+            </p>
+
+            <h2>
+                Тойго келип<br>
+                конок болуп кетиниздер!
+            </h2>
+
+            <div class="line"></div>
+
+            <p class="text">
+                Сиздерди сүйүктүү кызыбыз
+                <strong>Айтургандын</strong>
+                тушоо тоюна арналган
+                ак дасторконубуздун төрүнө
+                чакырабыз.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHILD PHOTO -->
+    <section class="photo-section">
+
+        <div class="photo-frame">
+
+            <img
+                src="assets/ayturgan.jpg"
+                alt="Айтурган"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- DATE -->
+    <section class="date-section section">
+
+        <div class="container">
+
+            <p class="section-small">
+                БИЗДИН ӨЗГӨЧӨ КҮНҮБҮЗ
+            </p>
+
+            <h2>
+                26
+            </h2>
+
+            <p class="month">
+                Сентябрь
+            </p>
+
+            <p class="year">
+                2026
+            </p>
+
+            <div class="date-info">
+
+                <div>
+                    <span>ИШЕМБИ</span>
+                </div>
+
+                <div>
+                    <span>СААТ</span>
+                    <strong>13:00</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section section">
+
+        <div class="container">
+
+            <p class="section-small">
+                ТОЙГО ЧЕЙИН
+            </p>
+
+            <div class="countdown">
+
+                <div class="count-box">
+                    <span id="days">00</span>
+                    <small>КҮН</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="hours">00</span>
+                    <small>СААТ</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="minutes">00</span>
+                    <small>МҮНӨТ</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="seconds">00</span>
+                    <small>СЕКУНД</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAMILY PHOTO -->
+    <section class="family-section">
+
+        <div class="container">
+
+            <div class="family-photo">
+
+                <img
+                    src="assets/family.jpg"
+                    alt="Үй-бүлө"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOSTS -->
+    <section class="hosts section">
+
+        <div class="container">
+
+            <p class="section-small">
+                ТОЙ ЭЭЛЕРИ
+            </p>
+
+            <h2>
+                Эрмек <span>&</span> Зинат
+            </h2>
+
+            <div class="line"></div>
+
+            <p class="text">
+                Сиздерди бул өзгөчө күнүбүздө
+                көрүп, бирге кубанууга
+                чын жүрөктөн күтөбүз.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOCATION -->
+    <section class="location section">
+
+        <div class="container">
+
+            <p class="section-small">
+                ТОЙ ӨТҮҮЧҮ ЖЕР
+            </p>
+
+            <h2>
+                Ак-Суу айылы
+            </h2>
+
+            <p class="address">
+                Октябрьская көчөсү,<br>
+                156-үй
+            </p>
+
+            <a
+                class="map-button"
+                href="https://www.google.com/maps/search/?api=1&query=Ак-Суу+айылы+Октябрьская+156"
+                target="_blank"
+            >
+                📍 Картадан көрүү
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final-section">
+
+        <div class="final-overlay"></div>
+
+        <div class="final-content">
+
+            <div class="final-heart">
+                ♡
+            </div>
+
+            <h2>
+                Сиздерди күтөбүз!
+            </h2>
+
+            <p>
+                26.09.2026
+            </p>
+
+            <div class="final-names">
+                Эрмек & Зинат
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
